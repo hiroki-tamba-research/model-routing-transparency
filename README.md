@@ -76,6 +76,10 @@ Cyber and biosecurity prompts were chosen because Anthropic's Fable 5 documentat
 
 CC-BY-4.0
 
+## DOI
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20622836.svg)](https://doi.org/10.5281/zenodo.20622836)
+
 ## Repository
 
 Source: https://github.com/hiroki-tamba-research/model-routing-transparency
