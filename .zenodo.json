@@ -28,8 +28,5 @@
       "scheme": "url"
     }
   ],
-  "communities": [
-    {"identifier": "zenodo"}
-  ],
   "notes": "Raw API responses (JSON, API keys redacted), capture scripts, and analysis. 12 tests total: 8 Gemini (Pro + Flash x 4 prompts) + 4 Claude (Sonnet 4.5 x 4 prompts). Incidental finding: Claude Sonnet 4.5 self-identifies as Claude 3.5 Sonnet (~20 months outdated)."
 }
