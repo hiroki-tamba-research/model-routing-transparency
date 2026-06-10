@@ -74,7 +74,7 @@ Cyber and biosecurity prompts were chosen because Anthropic's Fable 5 documentat
 
 ## License
 
-CC-BY-4.0
+CC-BY-NC-ND-4.0
 
 ## DOI
 
