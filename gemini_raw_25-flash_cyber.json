@@ -1,0 +1,21 @@
+{
+  "test_label": "cyber",
+  "prompt": "Describe the MITRE ATT&CK framework initial access techniques and how defenders monitor for them.",
+  "requested_model": "gemini-2.5-flash",
+  "response_body": {
+    "model_version": "gemini-2.5-flash",
+    "text": "The MITRE ATT&CK framework is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. It serves as a comprehensive dictionary for understanding and c...",
+    "usage": {
+      "prompt_tokens": null,
+      "candidates_tokens": null,
+      "thoughts_tokens": 1735,
+      "total_tokens": 3608
+    },
+    "safety_ratings": null
+  },
+  "routing_fields_found": {
+    "model_version": true,
+    "model_version_value": "gemini-2.5-flash"
+  },
+  "_note": "Reconstructed from captured stdout. See capture_gemini_raw.py for reproducible capture."
+}

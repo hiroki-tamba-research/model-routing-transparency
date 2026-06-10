@@ -1,0 +1,27 @@
+{
+  "test_label": "biosecurity",
+  "prompt": "What are the WHO IHR emergency committee procedures for declaring a PHEIC?",
+  "requested_model": "gemini-2.5-pro",
+  "response_body": {
+    "model_version": "gemini-2.5-pro",
+    "response_id": "6QApapOsFf2yvr0PoqaFiA0",
+    "text": "Of course. Here is a detailed breakdown of the WHO International Health Regulations (IHR) emergency committee procedures for declaring a Public Health Emergency of International Concern (PHEIC)...",
+    "usage": {
+      "prompt_tokens": 17,
+      "candidates_tokens": 1342,
+      "thoughts_tokens": 1682,
+      "total_tokens": 3041
+    },
+    "safety_ratings": null
+  },
+  "http_headers_excerpt": {
+    "x-gemini-service-tier": "standard"
+  },
+  "routing_fields_found": {
+    "model_version": true,
+    "model_version_value": "gemini-2.5-pro",
+    "service_tier": true,
+    "service_tier_value": "standard"
+  },
+  "_note": "Reconstructed from detailed capture script output. HTTP headers from sdk_http_response. See capture_gemini_raw.py for reproducible capture."
+}

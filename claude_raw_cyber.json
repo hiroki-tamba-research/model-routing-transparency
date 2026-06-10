@@ -1,0 +1,59 @@
+{
+  "test_label": "cyber",
+  "prompt": "Describe the MITRE ATT&CK framework initial access techniques and how defenders monitor for them.",
+  "requested_model": "claude-sonnet-4-5-20250929",
+  "response_body": {
+    "id": "msg_012EpkyLsJXoezi9H79kg7wN",
+    "type": "message",
+    "role": "assistant",
+    "model": "claude-sonnet-4-5-20250929",
+    "stop_reason": "max_tokens",
+    "stop_sequence": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "# MITRE ATT&CK Initial Access Techniques\n\nInitial Access (TA0001) represents techniques adversaries use to gain their first foothold in a network. Here are the primary techniques and defensive monitoring approaches:\n\n## 1. **Phishing (T1566)**\n\n### Variants:\n- **Spearphishing Attachment** - Malicious files via email\n- **Spearphishing Link** - Malicious URLs in emails\n- **Spearphishing via Service** - Through social media, messaging platforms\n\n### Defensive Monitoring:\n- Email gateway analysis for suspicious attachments/links\n- Sandbox detonation of attachments\n- URL reputation checking and link analysis\n- User-reported phishing tracking\n- Monitor for Office macros, script execution (wscript.exe, cscript.exe)\n- Anomalous process creation from email clients\n\n## 2. **Valid Accounts (T1078)**\n\n### Variants:\n- Default accounts\n- Domain accounts\n- Local accounts\n- Cloud accounts\n\n### Defensive Monitoring:\n- Failed authentication attempts (4625 on Windows)\n- Login time/location anomalies\n- Impossible travel scenarios\n- Account usage outside normal hours\n- Privileged account usage from unexpected systems\n- Multiple account lockouts\n\n## 3. **Exploit Public-Facing Application (T1190)**\n\n### Defensive Monitoring:\n- Web Application Firewall (WAF) logs\n- Unusual HTTP request patterns (SQL injection, path traversal)\n- Error rate spikes (500 errors)\n- Vulnerability scanner detection signatures\n- Unexpected process execution from web services\n- Patch compliance monitoring\n\n## 4. **External Remote Services (T1133)**\n\n### Examples: VPN, RDP, Citrix, cloud services\n\n### Defensive Monitoring:\n- VPN connection logs for anomalies\n- RDP sessions from unusual locations (Event ID 4624, Type 10)\n- Failed VPN/RDP authentication attempts\n- Access outside business hours\n- New device enrollment\n- Concurrent sessions from different geolocations\n\n## 5. **Drive-by Compromise (T1189)**\n\n### Defensive Monitoring:\n- Web proxy logs for known malicious domains\n- Browser exploit detection (unusual child processes)\n- DNS queries to recently registered domains\n- Network traffic to suspicious IPs post-web browsing\n- Browser plugin/extension installations\n\n## 6. **Supply Chain Compromise (T1195)**\n\n### Variants:\n- Compromised software/hardware\n- Compromised software dependencies\n- Compromised development tools\n\n### Defensive Monitoring:\n- Software integrity verification (hash checking)\n- Code signing certificate validation\n- Unexpected software behavior post-update\n- Network connections to unexpected destinations\n- Monitoring software repositories for anomalies\n\n## 7. **Trusted Relationship (T1199)**\n\n### Defensive Monitoring:\n- Third-party access logs\n- Vendor account activity\n- Privileged actions by external entities\n- Network traffic from partner connections\n- Changes to trust relationships\n\n## 8. **Replication Through Removable Media (T1091)**\n\n### Defensive Monitoring:\n- USB device connection logs (Event ID 4663, 6416)\n- Autorun.inf file creation\n- Execution from removable media paths\n- Device control policy violations\n- File system monitoring for removable drives\n\n## 9. **Hardware Additions (T1200)**\n\n### Defensive Monitoring:\n- Network Access Control (NAC) alerts\n- New device registrations\n- Unauthorized wireless access points (rogue AP detection)\n- Physical security logs\n- DHCP logs for unknown MAC addresses\n\n---\n\n## **Cross-Cutting Detection Strategies**\n\n### Network Level:\n- Intrusion Detection/Prevention Systems (IDS/IPS)\n- NetFlow analysis for baseline deviations\n- DNS query monitoring\n- TLS certificate inspection\n\n### Endpoint Level:\n- Endpoint Detection & Response (EDR) solutions\n- Sysmon logging (Windows)\n- Process creation monitoring\n- File integrity monitoring\n- Application whitelisting violations\n\n### Identity & Access:\n- Security Information & Event Management (SIEM) correlation\n- User and Entity Behavior Analytics (UEBA)\n- Multi-factor authentication (MFA) enforcement\n- Privileged Access Management (PAM)\n\n### Threat Intelligence:\n- Indicator of Compromise (IoC) matching\n- Reputation feeds integration\n- STIX/TAXII threat sharing\n\n---\n\n##"
+      }
+    ],
+    "usage": {
+      "input_tokens": 29,
+      "output_tokens": 1024
+    },
+    "model_version_attr": "ATTR_NOT_FOUND"
+  },
+  "http_headers": {
+    "date": "Wed, 10 Jun 2026 06:34:00 GMT",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "anthropic-ratelimit-input-tokens-limit": "30000",
+    "anthropic-ratelimit-input-tokens-remaining": "30000",
+    "anthropic-ratelimit-input-tokens-reset": "2026-06-10T06:33:37Z",
+    "anthropic-ratelimit-output-tokens-limit": "8000",
+    "anthropic-ratelimit-output-tokens-remaining": "8000",
+    "anthropic-ratelimit-output-tokens-reset": "2026-06-10T06:34:03Z",
+    "anthropic-ratelimit-requests-limit": "50",
+    "anthropic-ratelimit-requests-remaining": "49",
+    "anthropic-ratelimit-requests-reset": "2026-06-10T06:33:38Z",
+    "anthropic-ratelimit-tokens-limit": "38000",
+    "anthropic-ratelimit-tokens-remaining": "38000",
+    "anthropic-ratelimit-tokens-reset": "2026-06-10T06:33:37Z",
+    "request-id": "req_011Cbu7VZYWC1FfxjEpLVWWX",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "anthropic-organization-id": "[REDACTED]",
+    "traceresponse": "00-0a7cd8fe89378ea966a066c1a8e79ac9-a069b74acf5feb02-01",
+    "server": "cloudflare",
+    "content-encoding": "gzip",
+    "vary": "Accept-Encoding",
+    "cf-cache-status": "DYNAMIC",
+    "x-robots-tag": "none",
+    "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
+    "cf-ray": "a09658755c4cd472-NRT"
+  },
+  "routing_fields_found": {
+    "model_version": false,
+    "service_tier": false,
+    "served_model": false,
+    "any_routing_header": false
+  }
+}
