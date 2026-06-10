@@ -1,16 +1,12 @@
 {
   "title": "Per-Response Model Identity Disclosure in Frontier AI APIs: Cross-Vendor Comparison Data (June 2026)",
+  "upload_type": "dataset",
   "description": "Controlled comparison of per-response model identity disclosure across Google Gemini API and Anthropic Claude API. Google returns model_version and x-gemini-service-tier in every response (8/8 tests). Anthropic returns no equivalent fields (0/4 tests); response.model echoes the requested model without confirming the served model. Demonstrates that routing transparency is technically feasible and its absence is a design choice.",
   "creators": [
-    {
-      "name": "Tamba, Hiroki",
-      "orcid": "0009-0003-1818-4735",
-      "affiliation": "Tamba Research Academy"
-    }
+    {"name": "Tamba, Hiroki", "orcid": "0009-0004-7635-0741", "affiliation": "Tamba Research Academy"}
   ],
-  "upload_type": "dataset",
-  "access_right": "open",
-  "license": "CC-BY-4.0",
+  "license": "cc-by-4.0",
+  "language": "eng",
   "keywords": [
     "AI transparency",
     "model routing",
@@ -22,11 +18,7 @@
     "classification infrastructure"
   ],
   "related_identifiers": [
-    {
-      "identifier": "https://github.com/hiroki-tamba-research/model-routing-transparency",
-      "relation": "isSupplementTo",
-      "scheme": "url"
-    }
+    {"identifier": "https://github.com/hiroki-tamba-research/model-routing-transparency", "relation": "isSupplementTo", "scheme": "url"}
   ],
   "notes": "Raw API responses (JSON, API keys redacted), capture scripts, and analysis. 12 tests total: 8 Gemini (Pro + Flash x 4 prompts) + 4 Claude (Sonnet 4.5 x 4 prompts). Incidental finding: Claude Sonnet 4.5 self-identifies as Claude 3.5 Sonnet (~20 months outdated)."
 }
